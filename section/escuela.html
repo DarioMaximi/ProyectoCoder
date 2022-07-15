@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela</title>
+    <link rel="shortcut icon" href="../images/Vani.png">
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="estructuraEscuela">
+        <header class="header">
+            <!-- encabezado/barra de navegacion -->
+                <picture>
+                    <source media="(max-width: 500px )" srcset="../images/logo-mobile.png">
+                    <source media="(max-width: 1024px )" srcset="../images/logo-tablet.png">
+                    <img src="../images/logo.png" alt="logo">
+                </picture>
+                <picture>
+                    <source media="(max-width: 500px )" srcset="../images/vaniEscuela-mobile.png">
+                    <source media="(max-width: 1024px )" srcset="../images/vaniEscuela-tablet.png">
+                    <img src="../images/vaniEscuela.png" alt="bannerescuela">
+                </picture>
+        </header>
+            <nav class="navHome">
+                <!-- listas -->
+                <ul class="inicio">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="cursos.html">Cursos</a>
+                    </li>
+                    <li>
+                        <a href="almalider.html">Alma Lider</a>
+                    </li>
+                    <li>
+                        <a href="mentorias.html">Mentorias</a>
+                    </li>
+                    <li>
+                        <a href="escuela.html">Escuela</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="titulo">
+            <h1>Escuela</h1>
+            </div>
+            <article class="formularioEscuela">
+                <form class="formularioEscuelas">
+                    <!-- formulario para inscribirse a la escuela -->
+                    <label class="dato1" for="nombre_apellido">Nombre y Apellido:
+                        <input type="text" placeholder="Datos personales" name="Nombre y Apellido"><br>
+                    </label>
+                    <label for="email">Email:
+                        <input type="email" placeholder="aaa@bbb.com" name="email"><br>
+                    </label>
+                    <label for="Telefono">Telefono:
+                        <input type="tel" placeholder="(---)(----------)" name="Telefono"><br>
+                    </label>
+                    <p>Ya hiciste alguno de nuestros cursos?</p>
+                    <label for="sí">Sí</label>
+                    <input type="checkbox" name="si" value="1">
+                    <label for="no">No</label>
+                    <input type="checkbox" name="no" value="1">
+                    <p>Qué curso hiciste?</p>
+                    <select name="curso" id="curso">
+                        <option value="Ninguno">Ninguno</option>
+                        <option value="emprendedora a empresaria 1">emprendedora a empresaria 1</option>
+                        <option value="emprendedora a empresaria 2">emprendedora a empresaria 2</option>
+                        <option value="lleva tu negocio al próximo nivel">lleva tu negocio al próximo nivel</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="Comentarios">Comentarios:<br>
+                        <textarea placeholder="Comentarios"></textarea>
+                    </label>
+                    <br>
+                    <br>
+                    <input class="boton" type="submit" value="REGISTRARSE">
+                </form>
+            </article>
+    <footer id="pie">
+        <!-- pie de pagina -->
+        <p>Todos los derechos reservados</p>
+    </footer>
+    </div>
+</body>
+
+</html>

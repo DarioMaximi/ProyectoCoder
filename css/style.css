@@ -1,0 +1,580 @@
+/** colores
+#f7ad25
+#e09fb9
+#fdebe1
+#f6b29a
+#f07877
+#fdcfcf
+#e3bae3
+#f2c5b5
+    fuentes
+    font-family: 'boiling';
+    font-family: 'Everything';
+**/
+@font-face {
+	font-family: 'boiling';
+	src: url('../fonts/boiling/Boiling-BlackDemo.ttf');
+}
+@font-face {
+	font-family: 'Everything';
+	src: url('../fonts/everything_2/Everything.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/** MOBILE FIRST**/
+body{
+    background-color: #fdebe1;
+    height: 100vh;
+    width: 500px;
+}
+.estructuraHome{
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas:
+    "headerHome"
+    "navHome"
+    "divHome1"
+    "sectionHome2"
+    "asideHome"
+    "footer"
+    ;
+
+    grid-template-columns: 1fr;
+
+}
+
+.header{
+    grid-area: headerHome;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navHome{
+    border: 5px solid #f7ad25;
+    grid-area: navHome;
+    color: #e09fb9;
+    background-color:#f07877 ;
+    font-family: 'boiling';
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-areas:
+    "home"
+    "cursos"
+    "alma"
+    "mentoria"
+    "escuela"
+    ;
+    grid-template-columns: 1fr;
+    margin-bottom: .5cm;
+
+}
+
+/** NOMBRES PARA ORDENAR EL NAV**/
+
+.home{
+    grid-area: home;
+}
+
+.cursos{
+    grid-area: cursos;
+}
+
+.alma{
+    grid-area: alma;
+}
+
+.mentoria{
+    grid-area: mentoria;
+}
+
+.escuela{
+    grid-area: escuela;
+}
+
+/**FIN DE NOMBRES PARA ORDENAR EL NAV**/
+
+.divHome1{
+    font-family: 'boiling';
+    font-size: .75cm;
+    color:#f07877;
+    text-align: center;
+    grid-area: divHome1;
+
+}
+
+
+.sectionHome2{
+    grid-area: sectionHome2;
+    display: grid;
+    font-family:'Everything' ;
+    font-size: 1cm;
+    text-align: center;
+    margin-top: .5cm;
+    margin-bottom: .5cm;
+}
+
+
+.asideHome{
+    grid-area: asideHome;
+    display: grid;
+    grid-template-areas:
+    "curso1 curso2"
+    ". curso3";
+    text-align: center;
+}
+
+/** CLASIFICACION DE LOS CURSOS DE INICIO PARA GRID**/
+
+.curso1{
+    grid-area: curso1;
+}
+
+.curso2{
+    grid-area: curso2;
+}
+
+.curso3{
+    grid-area: curso3;
+}
+
+/**FIN CLASIFICACION DE CURSOS DEL INICIO**/
+
+#pie{
+    grid-area: footer;
+    font-family:'Everything' ;
+    text-align: center;
+    font-size: .5CM;
+    color: #f07877;
+    margin-bottom: 0;
+}
+
+/**ESTRUCTURA CURSOS.HTML**/
+.estructuraCursos{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "headerHome"
+    "navHome"
+    "titulo"
+    "cursosTabla"
+    "footer"
+    ;
+    grid-template-columns: 1fr;
+}
+
+.titulo{
+    font-family: 'boiling';
+    font-size: 1cm;
+    color:#f07877;
+    text-align: center;
+    grid-area: titulo;
+}
+
+.cursosTablas{
+    grid-area: cursosTabla;
+    text-align: center;
+    font-family:'Everything' ;
+    font-size: .5cm;
+    margin-top: .5cm;
+    display: grid;
+    grid-template-areas:
+    "empAEmpI"
+    "empAEmpII"
+    "llevaTuNegocio"
+    ;
+    grid-template-columns: 1fr;
+
+}
+
+.empAEmpI{
+    grid-area:empAEmpI ;
+    margin-bottom: 1cm;
+    border: 5px solid #f7ad25;
+}
+
+.empAEmpII{
+    grid-area: empAEmpII;
+    margin-bottom: 1cm;
+    border: 5px solid #f7ad25;
+}
+
+.llevaTuNegocio{
+    grid-area: llevaTuNegocio;
+    margin-bottom: 1cm;
+    border: 5px solid #f7ad25;
+}
+
+/** ESTRUCTURA ALMA LIDER.HTLM**/
+
+.bodyAlma{
+    background-color: black;
+    height: 100vh;
+    width: 500px;
+}
+
+.estructuraAlmaLider{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "headerHome"
+    "navHome"
+    "titulo"
+    "principal"
+    "footer";
+    grid-template-columns: 1fr;
+}
+
+.navAlma{
+    border: 5px solid #f7ad25;
+    grid-area: navHome;
+    color:#fdebe1 ;
+    text-align: center;
+    background-color:black ;
+    font-family: 'Everything';
+    font-size: 30px;
+}
+
+.principal{
+    grid-area: principal;
+    text-align: center;
+}
+
+/** ESTRUCTURA MENTORIA.HTLM**/
+
+.estructuraMentoria{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "headerHome"
+    "navHome"
+    "titulo"
+    "formularioMentoria"
+    "footer"
+    ;
+}
+
+.formularioMentoria{
+    grid-area: formularioMentoria;
+    border: .25cm double #e09fb9;
+
+}
+
+.formularioMentorias{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Everything';
+    font-size: 30px;
+    color:#f07877 ;
+
+}
+
+/** ESTRUCTURA ESCUELA.HTLM**/
+
+.estructuraeSCUELA{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "headerHome"
+    "navHome"
+    "titulo"
+    "formularioEscuela"
+    "footer"
+    ;
+}
+
+
+
+.formularioEscuela{
+    grid-area: formularioEscuela;
+    border: .25cm double #e09fb9;
+
+}
+
+.formularioEscuelas{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Everything';
+    font-size: 30px;
+    color:#f07877 ;
+    text-align: center;
+
+}
+
+/** TABLET **/
+@media (min-width: 500px){
+
+body{
+    background-color: #fdebe1;
+    height: 100vh;
+    width: 1024px;
+}
+.bodyAlma{
+    background-color: black;
+    height: 100vh;
+    width: 1024px;
+}
+
+
+.estructuraHome{
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas:
+    "headerHome"
+    "navHome"
+    "divHome1"
+    "sectionHome2"
+    "asideHome"
+    "footer"
+    ;
+
+    grid-template-columns: 1fr;
+
+}
+
+.navHome{
+    border: 5px solid #f7ad25;
+    color: #e09fb9;
+    background-color:#f07877 ;
+    grid-area: navHome;
+}
+.inicio{
+    font-family: 'boiling';
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-areas:
+    "home cursos alma mentoria escuela";
+    margin-bottom: .5cm;
+    grid-template-columns: 1fr 1fr 1fr 1r 1fr;
+    }
+
+}
+
+/** PC **/
+
+@media (min-width: 1024px){
+
+    body{
+        background-color: #fdebe1;
+        height: 100vh;
+        width: 1800px;
+    }
+    .bodyAlma{
+        background-color: black;
+        height: 100vh;
+        width: 1800px;
+    }
+
+
+    .estructuraHome{
+
+        display: grid;
+        grid-template-areas:
+        "headerHome headerHome headerHome"
+        "navHome navHome navHome"
+        "divHome1 divHome1 divHome1"
+        "sectionHome2 sectionHome2 sectionHome2"
+        "aside aside aside"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr ;
+        gap: .25cm;
+    }
+
+    .header{
+        grid-area: headerHome;
+        display: grid;
+        grid-template-areas: "logo vaniHome";
+    }
+
+    .divHome1 {
+
+        grid-area: divHome1;
+    }
+
+    sectionHome2{
+
+        grid-area: sectionHome2;
+    }
+
+    .navHome{
+
+    grid-area: navHome;
+    }
+
+    .asideHome{
+
+        grid-area: aside;
+    }
+
+    footer{
+
+        grid-area: footer;
+    }
+
+
+    header .logo{
+        grid-area: logo;
+    }
+
+    header .vaniHome{
+        grid-area: vaniHome;
+    }
+
+    /** barra de navegacion **/
+
+    .inicio li a{
+            padding: 2px 10px 2px 10px;
+            text-decoration: none;
+            text-align: center;
+            text-size-adjust: 20cm;
+            font-family: 'boiling';
+            font-size: 50px;
+            margin-left: 3cm;
+    }
+
+    /** textos de principales**/
+
+    h1, .titulo{
+        font-family: 'boiling';
+        text-align: center;
+        color: #f07877;
+        font-size: 4cm;
+    }
+
+    /** texto secundario del HOME**/
+
+    .h2Home{
+        font-family: 'boiling';
+        color: #f07877;
+        text-align: center;
+        font-size: 2cm;
+
+    }
+
+    /**presentacion del HOME**/
+
+    .sectionHome2{
+        display: grid;
+        grid-template-areas: "imagenPresentacion intro intro" ;
+    }
+
+    section .imagenPresentacion{
+        grid-area: imagenPresentacion;
+    }
+
+    section .intro{
+        grid-area: intro;
+        font-family: 'boiling';
+        color: #f07877;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    /** Alma Lider **/
+
+    .textoAlma{
+        font-family: 'boiling';
+        color: #f07877;
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    /** cursos que aparecen en el home **/
+    .asideHome{
+        display: grid;
+        grid-template-areas:"curso1 curso2 curso3";
+    }
+
+    aside .curso1{
+        grid-area: curso1;
+    }
+
+    aside .curso2{
+        grid-area: curso2;
+    }
+
+    aside .curso3{
+        grid-area: curso3;
+    }
+
+    .asideHome{
+        font-family: 'boiling';
+        color: #f07877;
+        font-size: x-large;
+        text-align: center;
+        gap: 5px;
+
+    }
+
+
+    /** pagina de cursos **/
+
+    .empAEmpI{
+        display: flex;
+    }
+
+    .empAEmpII{
+        display: flex;
+    }
+
+    .llevaTuNegocio{
+        display: flex;
+    }
+
+    .textoCursosTabla{
+        text-align: right;
+        font-family: 'boiling';
+        font-size: xx-large;
+    }
+
+    .botonCursosTabla button{
+        font-family: 'boiling';
+        font-size: large;
+        color:#f07877 ;
+        text-align: center;
+    }
+
+    /** pagina de escuela**/
+
+
+    .formularioEscuelas{
+        text-align: center;
+        font-family: 'Everything';
+        font-size: 50px;
+        color:#f07877 ;
+    }
+
+    /** pagina de mentorias**/
+
+    .formularioMentorias{
+        text-align: center;
+        font-family: 'Everything';
+        font-size: 50px;
+        color:#f07877 ;
+    }
+
+}
