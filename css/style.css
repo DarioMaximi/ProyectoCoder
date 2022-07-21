@@ -33,6 +33,17 @@ body{
     height: 100vh;
     width: 500px;
 }
+
+/** TRANSFORMACIONES**/
+
+.home:hover,
+.cursos:hover,
+.alma:hover,
+.mentoria:hover,
+.escuela:hover{
+    transform: scale(1.2);
+}
+
 .estructuraHome{
     width: 100%;
     margin: 0px auto;
@@ -381,7 +392,7 @@ body{
     body{
         background-color: #fdebe1;
         height: 100vh;
-        width: 1800px;
+        width: 100%;
     }
     .bodyAlma{
         background-color: black;
@@ -391,7 +402,8 @@ body{
 
 
     .estructuraHome{
-
+        width: 100%;
+        height: 100%;
         display: grid;
         grid-template-areas:
         "headerHome headerHome headerHome"
@@ -400,14 +412,15 @@ body{
         "sectionHome2 sectionHome2 sectionHome2"
         "aside aside aside"
         "footer footer footer";
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: .25cm;
     }
 
     .header{
+        width: 100%;
         grid-area: headerHome;
-        display: grid;
-        grid-template-areas: "logo vaniHome";
+        display: flex;
+        flex-direction: row;
     }
 
     .divHome1 {
@@ -415,13 +428,12 @@ body{
         grid-area: divHome1;
     }
 
-    sectionHome2{
+    .sectionHome2{
 
         grid-area: sectionHome2;
     }
 
     .navHome{
-
     grid-area: navHome;
     }
 
@@ -435,14 +447,6 @@ body{
         grid-area: footer;
     }
 
-
-    header .logo{
-        grid-area: logo;
-    }
-
-    header .vaniHome{
-        grid-area: vaniHome;
-    }
 
     /** barra de navegacion **/
 
@@ -463,6 +467,7 @@ body{
         text-align: center;
         color: #f07877;
         font-size: 4cm;
+        
     }
 
     /** texto secundario del HOME**/
@@ -526,7 +531,6 @@ body{
         color: #f07877;
         font-size: x-large;
         text-align: center;
-        gap: 5px;
 
     }
 
