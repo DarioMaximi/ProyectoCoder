@@ -47,17 +47,6 @@ body{
 .estructuraHome{
     width: 100%;
     margin: 0px auto;
-    display: grid;
-    grid-template-areas:
-    "headerHome"
-    "navHome"
-    "divHome1"
-    "sectionHome2"
-    "asideHome"
-    "footer"
-    ;
-
-    grid-template-columns: 1fr;
 
 }
 
@@ -68,7 +57,7 @@ body{
 
 }
 
-.navHome{
+#navbarNav{
     border: 5px solid #f7ad25;
     grid-area: navHome;
     color: #e09fb9;
@@ -78,40 +67,13 @@ body{
     font-size: 25px;
     text-align: center;
     list-style: none;
-    display: grid;
-    grid-template-areas:
-    "home"
-    "cursos"
-    "alma"
-    "mentoria"
-    "escuela"
-    ;
-    grid-template-columns: 1fr;
-    margin-bottom: .5cm;
+}
+
+.navColor{
+    background-color:#f07877 ;
 
 }
 
-/** NOMBRES PARA ORDENAR EL NAV**/
-
-.home{
-    grid-area: home;
-}
-
-.cursos{
-    grid-area: cursos;
-}
-
-.alma{
-    grid-area: alma;
-}
-
-.mentoria{
-    grid-area: mentoria;
-}
-
-.escuela{
-    grid-area: escuela;
-}
 
 /**FIN DE NOMBRES PARA ORDENAR EL NAV**/
 
@@ -250,14 +212,20 @@ body{
     grid-template-columns: 1fr;
 }
 
-.navAlma{
+#navbarAlma{
     border: 5px solid #f7ad25;
     grid-area: navHome;
-    color:#fdebe1 ;
-    text-align: center;
+    color:#fdebe1;
     background-color:black ;
-    font-family: 'Everything';
-    font-size: 30px;
+    font-family: 'boiling';
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    list-style: none;
+}
+
+.navColorAlma{
+    background-color:black ;
 }
 
 .principal{
@@ -350,26 +318,10 @@ body{
 .estructuraHome{
     width: 100%;
     margin: 0px auto;
-    display: grid;
-    grid-template-areas:
-    "headerHome"
-    "navHome"
-    "divHome1"
-    "sectionHome2"
-    "asideHome"
-    "footer"
-    ;
-
-    grid-template-columns: 1fr;
 
 }
 
-.navHome{
-    border: 5px solid #f7ad25;
-    color: #e09fb9;
-    background-color:#f07877 ;
-    grid-area: navHome;
-}
+
 .inicio{
     font-family: 'boiling';
     text-decoration: none;
@@ -403,17 +355,7 @@ body{
 
     .estructuraHome{
         width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-areas:
-        "headerHome headerHome headerHome"
-        "navHome navHome navHome"
-        "divHome1 divHome1 divHome1"
-        "sectionHome2 sectionHome2 sectionHome2"
-        "aside aside aside"
-        "footer footer footer";
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: .25cm;
+        height: 300px;
     }
 
     .header{
@@ -450,14 +392,9 @@ body{
 
     /** barra de navegacion **/
 
-    .inicio li a{
-            padding: 2px 10px 2px 10px;
-            text-decoration: none;
-            text-align: center;
-            text-size-adjust: 20cm;
-            font-family: 'boiling';
-            font-size: 50px;
-            margin-left: 3cm;
+    #navbarNav{
+        display: flex;
+        justify-content: center;
     }
 
     /** textos de principales**/
