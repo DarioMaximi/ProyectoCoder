@@ -1,15 +1,15 @@
 .sectionHome2{
     width: 100%;
     display: grid;
-    font-family:'Everything' ;
     font-size: 1cm;
-    text-align: center;
     margin-top: .5cm;
     margin-bottom: .5cm;
     grid-template-areas:
     "imagenInicio intro intro"
     "imagenInicio intro intro";
     justify-content: center;
+    @include AlineacionFuente;
+
 }
 
 .imagenInicio{
@@ -31,7 +31,7 @@ h5{
 @media (max-width: 500px){
     .sectionHome2{
         font-size: .5cm;
-        grid-template-areas: 
+        grid-template-areas:
         "imagenInicio imagenInicio"
         "intro intro";
     }
@@ -40,7 +40,7 @@ h5{
 @media (max-width: 1000px){
     .sectionHome2{
         font-size: .75cm;
-        grid-template-areas: 
+        grid-template-areas:
         "imagenInicio imagenInicio"
         "intro intro";
     }

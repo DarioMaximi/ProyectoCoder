@@ -1,7 +1,7 @@
 .card1{
     background-color: #e09fb9;
     border: 5px solid #f7ad25;
-    text-align: center;
+    @include AlineacionFuente;
 }
 
 .card2{
