@@ -1,11 +1,14 @@
 .sectionHome2{
+    width: 100%;
     display: grid;
     font-family:'Everything' ;
     font-size: 1cm;
     text-align: center;
     margin-top: .5cm;
     margin-bottom: .5cm;
+    grid-template-columns: 40% 60%;
     grid-template-areas:"imagenInicio intro" ;
+    justify-items: end;
 }
 
 .imagenInicio{
@@ -14,6 +17,8 @@
 
 .intro{
     grid-area: intro;
+    width: 70%;
+    height: 70%;
 }
 
 h5{

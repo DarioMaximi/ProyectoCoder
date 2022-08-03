@@ -35,6 +35,10 @@
   box-sizing: border-box;
 }
 
+header {
+  width: 100%;
+}
+
 .navbar {
   border: 5px solid #f7ad25;
   color: #e09fb9;
@@ -98,13 +102,16 @@ h2 {
   }
 }
 .sectionHome2 {
+  width: 100%;
   display: grid;
   font-family: "Everything";
   font-size: 1cm;
   text-align: center;
   margin-top: 0.5cm;
   margin-bottom: 0.5cm;
+  grid-template-columns: 40% 60%;
   grid-template-areas: "imagenInicio intro";
+  justify-items: end;
 }
 
 .imagenInicio {
@@ -113,6 +120,8 @@ h2 {
 
 .intro {
   grid-area: intro;
+  width: 70%;
+  height: 70%;
 }
 
 h5 {
