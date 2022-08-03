@@ -34,15 +34,7 @@ body{
     width: 500px;
 }
 
-/** TRANSFORMACIONES**/
-
-.home:hover,
-.cursos:hover,
-.alma:hover,
-.mentoria:hover,
-.escuela:hover{
-    transform: scale(1.2);
-}
+/**ESTRUTURA**/
 
 .estructuraHome{
     width: 100%;
