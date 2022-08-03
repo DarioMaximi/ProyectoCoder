@@ -1,0 +1,20 @@
+
+@font-face {
+	font-family: 'boiling';
+	src: url('../fonts/boiling/Boiling-BlackDemo.ttf');
+}
+@font-face {
+	font-family: 'Everything';
+	src: url('../fonts/everything_2/Everything.ttf');
+}
+
+
+.body{
+    background-color: $fondo-principal ;
+    width: 100%;
+}
+
+.bodyAlma{
+    background-color: black;
+    width: 100%;
+}

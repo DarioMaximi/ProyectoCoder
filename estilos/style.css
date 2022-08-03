@@ -1,0 +1,146 @@
+/** colores
+#f7ad25
+#e09fb9
+#fdebe1
+#f6b29a
+#f07877
+#fdcfcf
+#e3bae3
+#f2c5b5
+    fuentes
+    font-family: 'boiling';
+    font-family: 'Everything';
+**/
+@font-face {
+  font-family: "boiling";
+  src: url("../fonts/boiling/Boiling-BlackDemo.ttf");
+}
+@font-face {
+  font-family: "Everything";
+  src: url("../fonts/everything_2/Everything.ttf");
+}
+.body {
+  background-color: #fdebe1;
+  width: 100%;
+}
+
+.bodyAlma {
+  background-color: black;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  border: 5px solid #f7ad25;
+  color: #e09fb9;
+  background-color: #f07877;
+  font-family: "boiling";
+  text-decoration: none;
+  font-size: 1cm;
+  list-style: none;
+}
+
+.dark {
+  background-color: black;
+}
+
+h1, h2 {
+  color: #f07877;
+  font-family: "boiling";
+  text-align: center;
+  font-size: 3cm;
+}
+
+h2 {
+  font-size: 1.5cm;
+}
+
+.h1Alma, .h2Alma {
+  color: white;
+}
+
+.footer, .footer1 {
+  text-align: center;
+  font-family: "boiling";
+  color: #f07877;
+  font-size: 0.75cm;
+}
+
+.footer1 {
+  color: white;
+}
+
+@media (max-width: 500px) {
+  h1, h2 {
+    font-size: 1cm;
+  }
+  h2 {
+    font-size: 0.75cm;
+  }
+  .footer, .footer1 {
+    font-size: 0.375cm;
+  }
+}
+@media (min-width: 500px) and (max-width: 1000px) {
+  h1, h2 {
+    font-size: 2cm;
+  }
+  h2 {
+    font-size: 1cm;
+  }
+  .footer, .footer1 {
+    font-size: 0.5cm;
+  }
+}
+.sectionHome2 {
+  display: grid;
+  font-family: "Everything";
+  font-size: 1cm;
+  text-align: center;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
+  grid-template-areas: "imagenInicio intro";
+}
+
+.imagenInicio {
+  grid-area: imagenInicio;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+h5 {
+  color: black;
+}
+
+.pIndex {
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .sectionHome2 {
+    font-size: 0.5cm;
+    grid-template-areas: "imagenInicio" "intro";
+  }
+}
+@media (max-width: 1000px) {
+  .sectionHome2 {
+    font-size: 0.75cm;
+    grid-template-areas: "imagenInicio" "intro";
+  }
+}
+.card1, .card3, .card2 {
+  background-color: #e09fb9;
+  border: 5px solid #f7ad25;
+  text-align: center;
+}
+
+.imgAlma {
+  text-align: center;
+}

@@ -4,70 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almalider</title>
-    <link rel="shortcut icon" href="../images/Vani.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Alma Lider</title>
 </head>
 <body class="bodyAlma">
-    <div class="esturcturaAlmaLider">
-        <header class="header">
-        <!-- encabezado/barra de navegacion -->
-            <picture>
-                <source media="(max-width: 500px )" srcset="../images/logo-mobile.png">
-                <source media="(max-width: 1024px )" srcset="../images/logo-tablet.png">
-                <img src="../images/logo.png" alt="logo">
-            </picture>
-            <picture>
-                <source media="(max-width: 500px )" srcset="../images/vaniAlmaLider-mobile.png">
-                <source media="(max-width: 1024px )" srcset="../images/vaniAlmaLider-tablet.png">
-                <img src="../images/vanialmalider.png" alt="banneralmalider">
-            </picture>
-        </header>
-        <nav class="navbar navbar-expand-lg navbar-dark navColor">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse flex" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="cursos.html">Cursos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="almalider.html">Alma Lider</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="mentorias.html">Mentorias</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="escuela.html">Escuela</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <div class="titulo">
-            <!-- texto, link directo a la pagina de Alma e imagen -->
-            <h1>Alma Lider</h1>
-            <p>Sumate y subi de nivel</p>
-            <a href="https://soyalmalider.com/" target="_blank">Alma Lider</a>
-        </div>
-        <section class="principal">
-                <picture>
-                    <source media="(max-width: 500px )" srcset="../images/BIENVENIDOS-mobile.png">
-                    <source media="(max-width: 1024px )" srcset="../images/BIENVENIDOS-tablet.png">
-                    <img class="imagenAlma"  src="../images/BIENVENIDOS.png" alt="logo alma lider">
-                </picture>
-        </section>
 
-        <footer id="pie">
-                    <!-- pie de pagina -->
-            <p>Todos los derechos reservados</p>
-        </footer>
+    <header>
+
+      <div class="imagenesBarra">
+        <picture class="vaniHome1">
+            <source media="(max-width: 500px)" srcset="../images/vaniAlmaLider-mobile.png">
+            <source media="(max-width: 1024px)" srcset="../images/vaniAlmaLider-tablet.png">
+            <img class="vaniHome" src="../Images/vaniAlmaLider.png" >
+        </picture>
+      </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img src="../Images/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse text-center navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  <a class="nav-link" href="../section/cursos.html">Cursos</a>
+                  <a class="nav-link active" href="#">Alma Lider</a>
+                  <a class="nav-link" href="../section/escuela.html">Escuela</a>
+                  <a class="nav-link" href="../section/mentoria.html">Mentorias</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    
+    <div>
+        <h1 class="h1Alma">Alma Lider </h1>
+        <h2 class="h2Alma">Sumate y subi de nivel</h2>
     </div>
+
+
+    <div class="imgAlma">
+    <img src="../Images/BIENVENIDOS.png" class="img-fluid"  alt="...">
+    </div>
+
+    <footer>
+
+      <p class="footer1">Todos los derechos reservados VaniBrand (R) 2022</p>
+  
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

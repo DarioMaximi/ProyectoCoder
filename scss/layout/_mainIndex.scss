@@ -1,0 +1,43 @@
+.sectionHome2{
+    display: grid;
+    font-family:'Everything' ;
+    font-size: 1cm;
+    text-align: center;
+    margin-top: .5cm;
+    margin-bottom: .5cm;
+    grid-template-areas:"imagenInicio intro" ;
+}
+
+.imagenInicio{
+    grid-area: imagenInicio;
+}
+
+.intro{
+    grid-area: intro;
+}
+
+h5{
+    color: black;
+}
+
+.pIndex{
+    color: black;
+}
+
+@media (max-width: 500px){
+    .sectionHome2{
+        font-size: .5cm;
+        grid-template-areas: 
+        "imagenInicio"
+        "intro";
+    }
+}
+
+@media (max-width: 1000px){
+    .sectionHome2{
+        font-size: .75cm;
+        grid-template-areas: 
+        "imagenInicio"
+        "intro";
+    }
+}

@@ -1,0 +1,55 @@
+h1{
+    color: $font-principal;
+	font-family: 'boiling';
+    text-align: center;
+    font-size: 3cm;
+}
+
+h2{
+    @extend h1;
+    font-size: 1.5cm;
+}
+
+.h1Alma{
+    color: white;
+}
+
+.h2Alma{
+    @extend .h1Alma;
+}
+
+.footer{
+    text-align: center;
+    font-family:'boiling' ;
+    color: $font-principal;
+    font-size: .75cm;
+}
+
+.footer1{
+    @extend .footer;
+    color: white;
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 1cm;
+    }
+    h2{
+        font-size: .75cm;
+    }
+    .footer{
+        font-size: .375cm;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px){
+    h1{
+        font-size: 2cm;
+    }
+    h2{
+        font-size: 1cm;
+    }
+    .footer{
+        font-size: .5cm;
+    }
+}
