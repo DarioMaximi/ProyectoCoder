@@ -109,9 +109,8 @@ h2 {
   text-align: center;
   margin-top: 0.5cm;
   margin-bottom: 0.5cm;
-  grid-template-columns: 40% 60%;
-  grid-template-areas: "imagenInicio intro";
-  justify-items: end;
+  grid-template-areas: "imagenInicio intro intro" "imagenInicio intro intro";
+  justify-content: center;
 }
 
 .imagenInicio {
@@ -120,8 +119,6 @@ h2 {
 
 .intro {
   grid-area: intro;
-  width: 70%;
-  height: 70%;
 }
 
 h5 {
@@ -135,13 +132,13 @@ h5 {
 @media (max-width: 500px) {
   .sectionHome2 {
     font-size: 0.5cm;
-    grid-template-areas: "imagenInicio" "intro";
+    grid-template-areas: "imagenInicio imagenInicio" "intro intro";
   }
 }
 @media (max-width: 1000px) {
   .sectionHome2 {
     font-size: 0.75cm;
-    grid-template-areas: "imagenInicio" "intro";
+    grid-template-areas: "imagenInicio imagenInicio" "intro intro";
   }
 }
 .card1, .card3, .card2 {
