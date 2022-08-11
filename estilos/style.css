@@ -104,13 +104,13 @@ h2 {
 .sectionHome2 {
   width: 100%;
   display: grid;
-  font-family: "Everything";
   font-size: 1cm;
-  text-align: center;
   margin-top: 0.5cm;
   margin-bottom: 0.5cm;
   grid-template-areas: "imagenInicio intro intro" "imagenInicio intro intro";
   justify-content: center;
+  text-align: center;
+  font-family: "Everything";
 }
 
 .imagenInicio {
@@ -145,6 +145,7 @@ h5 {
   background-color: #e09fb9;
   border: 5px solid #f7ad25;
   text-align: center;
+  font-family: "Everything";
 }
 
 .imgAlma {
