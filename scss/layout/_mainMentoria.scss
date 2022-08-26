@@ -1,0 +1,15 @@
+.formMentoria{
+    width: 80%;
+}
+
+.descIndividual{
+    text-align: center;
+    color: $font-principal;
+    font-family: 'Everything';
+    font-size: 1cm;
+    width: 80%;
+}
+
+.descGrupal{
+    @extend .descIndividual;
+}

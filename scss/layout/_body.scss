@@ -10,7 +10,7 @@
 
 
 .body{
-    background-color: $fondo-principal ;
+    background-color: $fondo-principal;
     width: 100%;
 }
 
@@ -18,3 +18,12 @@
     background-color: black;
     width: 100%;
 }
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+  }

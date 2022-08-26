@@ -2,6 +2,13 @@
     background-color: #e09fb9;
     border: 5px solid #f7ad25;
     @include AlineacionFuente;
+    font-size: .75cm;
+            ul{
+                font-size: 1cm;
+    }
+            a{
+                font-size: 1.25cm;
+    }
 }
 
 .card2{
@@ -10,4 +17,31 @@
 
 .card3{
     @extend .card1;
+}
+
+/* Responsive */
+
+@media (max-width: 500px){
+    .card1{
+        font-size: .45cm;
+                ul{
+                    font-size: .55cm;
+        }
+                a{
+                    font-size: .70cm;
+        }
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px){
+    .card1{
+        font-size: .55cm;
+                ul{
+                    font-size: .75cm;
+        }
+                a{
+                    font-size: 1cm;
+        }
+    }
+
 }

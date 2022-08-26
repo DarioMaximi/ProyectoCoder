@@ -1,3 +1,5 @@
+
+/* imagen y texto de presentacion */
 .sectionHome2{
     width: 100%;
     display: grid;
@@ -5,8 +7,8 @@
     margin-top: .5cm;
     margin-bottom: .5cm;
     grid-template-areas:
-    "imagenInicio intro intro"
-    "imagenInicio intro intro";
+    "imagenInicio imagenInicio intro intro"
+    "imagenInicio imagenInicio intro intro";
     justify-content: center;
     @include AlineacionFuente;
 
@@ -27,6 +29,8 @@ h5{
 .pIndex{
     color: black;
 }
+
+/* Responsive */
 
 @media (max-width: 500px){
     .sectionHome2{
